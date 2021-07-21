@@ -19,6 +19,7 @@ public class PDFReader {
 	 * It works only for pdf files only which contains text only.
 	 * If our pdf file contains the scanned copy of image then in that case it returns
 	 * the null data.
+	 * test
 	 * */
 	@Test
 	public void verifyLoginCredentials() throws InterruptedException, IOException {
