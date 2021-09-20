@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\hchopade\AppData\Local\Temp\testng-eclipse-1602122549\testng-customsuite.xml</span>
+                    <span>C:\Users\hchopade\AppData\Local\Temp\testng-eclipse-48020580\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,21 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content failed suite-Default_suite">
+                    <div class="method-list-content passed suite-Default_suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="demo.AccessibilityTesting" hash-for-method="verifyLoginCredentials">verifyLoginCredentials</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="demo.Report1" hash-for-method="testReport">testReport</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,127 +119,25 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
+          <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">demo.AccessibilityTesting</span>
+              <img src="passed.png"/>
+              <span class="class-name">demo.Report1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyLoginCredentials">
-                  </a> <!-- verifyLoginCredentials -->
-                  <span class="method-name">verifyLoginCredentials</span>
-                  <div class="stack-trace">java.lang.AssertionError: Found 8 accessibility violations:
-1) ARIA role must be appropriate for the element: https://dequeuniversity.com/rules/axe/3.1/aria-allowed-role?application=axeAPI
-  a) [&quot;iframe[title=\&quot;reCAPTCHA\&quot;]&quot;]
-    Fix any of the following:
-      role presentation  is not allowed for given element
-
-
-2) Elements must have sufficient color contrast: https://dequeuniversity.com/rules/axe/3.1/color-contrast?application=axeAPI
-  a) [&quot;iframe[title=\&quot;reCAPTCHA\&quot;]&quot;,&quot;.rc-anchor-invisible-text &gt; span&quot;]
-    Fix any of the following:
-      Element has insufficient color contrast of 3.29 (foreground color: #ffffff, background color: #4a90e2, font size: 9.8pt, font weight: normal). Expected contrast ratio of 4.5:1
-
-
-  b) [&quot;iframe[title=\&quot;reCAPTCHA\&quot;]&quot;,&quot;strong&quot;]
-    Fix any of the following:
-      Element has insufficient color contrast of 3.29 (foreground color: #ffffff, background color: #4a90e2, font size: 9.8pt, font weight: normal). Expected contrast ratio of 4.5:1
-
-
-3) Heading levels should only increase by one: https://dequeuniversity.com/rules/axe/3.1/heading-order?application=axeAPI
-  a) [&quot;h4&quot;]
-    Fix any of the following:
-      Heading order invalid
-
-
-4) &lt;html&gt; element must have a lang attribute: https://dequeuniversity.com/rules/axe/3.1/html-has-lang?application=axeAPI
-  a) [&quot;html&quot;]
-    Fix any of the following:
-      The &lt;html&gt; element does not have a lang attribute
-
-
-5) Form elements must have labels: https://dequeuniversity.com/rules/axe/3.1/label?application=axeAPI
-  a) [&quot;#username&quot;]
-    Fix any of the following:
-      aria-label attribute does not exist or is empty
-      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-      Form element does not have an implicit (wrapped) &lt;label&gt;
-      Form element does not have an explicit &lt;label&gt;
-      Element has no title attribute or the title attribute is empty
-
-
-6) Page must have one main landmark: https://dequeuniversity.com/rules/axe/3.1/landmark-one-main?application=axeAPI
-  a) [&quot;html&quot;]
-    Fix all of the following:
-      Page does not have a main landmark
-
-
-  b) [&quot;iframe[title=\&quot;reCAPTCHA\&quot;]&quot;,&quot;html&quot;]
-    Fix all of the following:
-      Page does not have a main landmark
-
-
-7) Page must contain a level-one heading: https://dequeuniversity.com/rules/axe/3.1/page-has-heading-one?application=axeAPI
-  a) [&quot;html&quot;]
-    Fix all of the following:
-      Page must have a level-one heading
-
-
-  b) [&quot;iframe[title=\&quot;reCAPTCHA\&quot;]&quot;,&quot;html&quot;]
-    Fix all of the following:
-      Page must have a level-one heading
-
-
-8) All page content must be contained by landmarks: https://dequeuniversity.com/rules/axe/3.1/region?application=axeAPI
-  a) [&quot;html&quot;]
-    Fix any of the following:
-      Some page content is not contained by landmarks
-
- expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertTrue(Assert.java:45)
-	at demo.AccessibilityTesting.verifyLoginCredentials(AccessibilityTesting.java:50)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:764)
-	at org.testng.TestRunner.run(TestRunner.java:585)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.runSuites(TestNG.java:1069)
-	at org.testng.TestNG.run(TestNG.java:1037)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
+                  <a name="testReport">
+                  </a> <!-- testReport -->
+                  <span class="method-name">testReport</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
+          </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\hchopade\AppData\Local\Temp\testng-eclipse-1602122549\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\hchopade\AppData\Local\Temp\testng-eclipse-48020580\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -248,7 +146,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;demo.AccessibilityTesting&quot;/&gt;
+      &lt;class name=&quot;demo.Report1&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -290,14 +188,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyLoginCredentials')
-data.setCell(0, 2, 'demo.AccessibilityTesting')
-data.setCell(0, 3, 15095);
+data.setCell(0, 1, 'testReport')
+data.setCell(0, 2, 'demo.Report1')
+data.setCell(0, 3, 8809);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -323,11 +221,9 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">demo.AccessibilityTesting</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">demo.Report1</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyLoginCredentials</span>
+                <span class="method-name">testReport</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
